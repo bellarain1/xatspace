@@ -125,9 +125,11 @@
     </div>
 
     <!-- === PANTALLA 2: VIDEO EXPERIENCIA === -->
-    <div id="video-container" class="fixed inset-0 bg-black z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-1000">
+    <!-- Agregado pt-[65px] para respetar el banner superior -->
+    <div id="video-container" class="fixed inset-0 bg-black z-50 flex items-center justify-center pt-[65px] opacity-0 pointer-events-none transition-opacity duration-1000">
         <!-- Foto Flotante de la Fase 2 -->
-        <div class="absolute top-6 right-6 md:top-10 md:right-10 z-[60] animate-float opacity-90">
+        <!-- Ajustado top-[90px] (65px banner + margen) para que no quede debajo del banner -->
+        <div class="absolute top-[90px] right-6 md:top-[105px] md:right-10 z-[60] animate-float opacity-90">
              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-white/30 overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                 <img 
                     src="perfil.jpg" 
