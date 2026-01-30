@@ -59,12 +59,12 @@
         }
 
         .glass-button:hover {
-            /* EFECTO CORREGIDO: Blanco Cristalino (Glass Morph) en lugar de rosa */
-            background: rgba(255, 255, 255, 0.55); /* Más opaco y blanco */
+            /* Efecto Blanco Cristalino (Glass Morph) */
+            background: rgba(255, 255, 255, 0.55); 
             border-color: rgba(255, 255, 255, 0.8);
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Resplandor blanco */
-            color: #000000; /* Mantiene texto negro */
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); 
+            color: #000000; 
         }
 
         /* Utilidad para desvanecer */
@@ -83,9 +83,9 @@
     <!-- === PANTALLA 1: HOME / LLUVIA === -->
     <div id="home-container" class="absolute inset-0 w-full h-full pt-[65px] transition-opacity duration-1000 flex flex-col justify-between">
         
-        <!-- Video Lluvia Fondo (URL restaurada para preview) -->
+        <!-- Video Lluvia Fondo -->
         <video autoplay muted loop playsinline class="absolute top-0 left-0 min-w-full min-h-full object-cover z-0">
-            <source src="https://cdn.pixabay.com/video/2019/10/24/28236-368501609_large.mp4" type="video/mp4">
+            <source src="fondo.mp4" type="video/mp4">
         </video>
 
         <!-- Overlay oscuro -->
@@ -96,12 +96,12 @@
             <!-- Tarjeta Glass -->
             <div id="main-card" class="glass-card rounded-3xl p-10 flex flex-col items-center text-center animate-float w-full max-w-xs">
                 
-                <!-- Foto de Perfil (URL restaurada para preview) -->
+                <!-- Foto de Perfil -->
                 <div class="relative mb-8 group cursor-pointer">
                     <div class="absolute -inset-2 bg-white/20 rounded-full blur-md opacity-0 group-hover:opacity-50 transition duration-700"></div>
                     <div class="relative w-32 h-32 rounded-full overflow-hidden border-2 border-white/40 shadow-2xl">
                         <img 
-                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" 
+                            src="perfil.jpg" 
                             alt="Foto de perfil" 
                             class="w-full h-full object-cover transform transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110"
                         >
@@ -126,20 +126,20 @@
 
     <!-- === PANTALLA 2: VIDEO EXPERIENCIA === -->
     <div id="video-container" class="fixed inset-0 bg-black z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-1000">
-        <!-- Foto Flotante de la Fase 2 (URL restaurada) -->
+        <!-- Foto Flotante de la Fase 2 -->
         <div class="absolute top-6 right-6 md:top-10 md:right-10 z-[60] animate-float opacity-90">
              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-white/30 overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                 <img 
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" 
+                    src="perfil.jpg" 
                     alt="Perfil pequeño" 
                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 >
             </div>
         </div>
 
-        <!-- Video Experiencia (URL restaurada para preview) -->
+        <!-- Video Experiencia -->
         <video id="main-video" loop playsinline class="w-full h-full object-contain max-h-screen max-w-screen">
-            <source src="https://i.imgur.com/3EubMGF.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
         </video>
         
         <!-- Botón fallback sonido -->
